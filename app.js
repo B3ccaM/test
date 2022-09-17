@@ -1,0 +1,37 @@
+const x = prompt("what do you wanna be called?");
+
+console.log( "Welcome to my quiz game trial " + prompt())
+const losses = 10
+
+if(losses > 20){
+    console.log("Come on you got this.");
+} 
+else if(losses> 0){
+    console.log("Can you answer my question?");
+}
+
+function myFunction() {
+    var text;
+    var favChar = prompt("What video game character wears a red cap and collects coins?")
+    switch(favChar) {
+        case "Mario":
+            text = "That is correct!";
+            break;
+        case "mario":
+            text = "That is correct!";
+            break;
+        default:
+            text = "Sorry but that is in correct!"
+    }
+document.getElementById("demo").innerHTML = text;
+}
+
+let text = "randomString";
+document.getElementById("demo").innerHTML = text.length;
+console.log(text.length)
+
+
+document.getElementById("demo").innerHTML = 
+  text.length.valueOf() + "<br>" +
+  (24).valueOf() + "<br>" +
+  (12+ 13).valueOf();
