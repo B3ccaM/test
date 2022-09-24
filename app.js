@@ -16,12 +16,14 @@ function myFunction() {
     switch(favChar) {
         case "Mario":
             text = "That is correct!";
+            document.getElementById("demo").style.color = "green";
             break;
         case "mario":
             text = "That is correct!";
+            document.getElementById("demo").style.color = "green";
             break;
         default:
-            text = "Sorry but that is in correct!"
+            text = "Sorry but that is incorrect!"
     }
 document.getElementById("demo").innerHTML = text;
 }
@@ -35,3 +37,19 @@ document.getElementById("demo").innerHTML =
   text.length.valueOf() + "<br>" +
   (24).valueOf() + "<br>" +
   (12+ 13).valueOf();
+
+//For Loop
+for(let i=0; i < 5; i++){
+    console.log(i);
+}
+
+//while Loop
+let j = 0;
+while(j < 5){
+    console.log("Im getting closer to 5");
+    j++;
+}
+
+//Change CSS
+document.getElementById("demo").style.color = "blue";
+
