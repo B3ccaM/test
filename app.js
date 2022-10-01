@@ -1,3 +1,4 @@
+let input = document.getElementById('demo3');
 const x = prompt("what do you wanna be called?");
 
 console.log( "Welcome to my quiz game trial " + prompt())
@@ -52,4 +53,32 @@ while(j < 5){
 
 //Change CSS
 document.getElementById("demo").style.color = "blue";
+
+const songs = [];
+songs[0]= "Dark Days by Local Natives";
+songs[1]= "Knights of Cyndonia by Muse";
+songs[2]= "Do What Your Told by Swimming with Bears";
+songs[3]= "Livin on a Prayer by Bon Jovi";
+
+console.log(songs);
+
+
+function songList() {
+    document.getElementById("demo2").innerHTML = songs.join(" * ");
+}
+
+
+function addSong(addthis) {
+  let listObject = [songs];
+  listObject.push(addthis);
+  console.log(listObject);
+
+}
+
+function entry(){
+    let newSong = prompt(entry.value + "songs");
+    if(newSong){
+        addSong(newSong);
+    }
+}
 
